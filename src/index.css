@@ -1,13 +1,103 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ffcbcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.design-box {
+  width: 420px;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 0;
+  text-align: center;
+}
+.design-box h2 {
+  margin-top: 0px;
+  color: #ff5967;
+}
+.form-control {
+  display: flex;
+  gap: 10px;
+}
+.form-control input,
+.form-control select,
+.form-control button {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.form-control input,
+.form-control select {
+  width: 130px;
+  border: 1px solid #ff5967;
+}
+.form-control button {
+  cursor: pointer;
+  background: #288ef4;
+  color: #fff;
+}
+.svg-icon {
+  width: 14px;
+}
+.editIcon {
+  fill: #0dc143;
+}
+.deleteIcon {
+  fill: #f04654;
+  width: 13px;
+}
+table button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.warn-msg,
+.sucs-msg {
+  display: block;
+  padding: 5px 10px;
+}
+.warn-msg {
+  background: #ffafb6;
+  color: #561d16;
+}
+.sucs-msg {
+  background: #0dc143;
+  color: #acffc5;
+}
+
+table thead tr th {
+  background: #288ef4;
+  color: #fff;
+  padding: 5px 6px;
+  font-weight: normal;
+}
+table tbody tr td {
+  font-size: 13px;
+  padding: 7px 6px;
+  color: #222;
+  font-weight: normal;
+}
+table tbody tr:nth-child(odd) {
+  background: #fff;
+}
+table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.remove-btn {
+  padding: 6px 12px;
+  margin-top: 20px;
+  background: #f04654;
+  color: #fff;
+  cursor: pointer;
+  border: none;
 }
